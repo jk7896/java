@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.oops.java_lang_Class"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="part05_encapsulation.MakeReport"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="part13_test_T.Student"/>
+    <fullyQualifiedTypeName name="javax.security.auth.Subject"/>
+    <fullyQualifiedTypeName name="part14_inheritance.Human"/>
+    <fullyQualifiedTypeName name="part14_inheritance.cat"/>
+    <fullyQualifiedTypeName name="part14_inheritance.Animal"/>
+    <fullyQualifiedTypeName name="part14_inheritance.Turtle"/>
+    <fullyQualifiedTypeName name="part02.VIPCustomer"/>
+    <fullyQualifiedTypeName name="part06_up.parent"/>
+    <fullyQualifiedTypeName name="part02.Customer"/>
+    <fullyQualifiedTypeName name="java.lang.Package"/>
+    <fullyQualifiedTypeName name="part10_downcasting.Parent"/>
+    <fullyQualifiedTypeName name="part11_abstractMethod.Computer"/>
+    <fullyQualifiedTypeName name="javax.swing.text.TabStop"/>
+    <fullyQualifiedTypeName name="part12_Interface.Calculator"/>
+    <fullyQualifiedTypeName name="part13.DbHepher"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,14 @@
+package part03_ClassTest;
+
+public class Test_call {
+
+	public static void main(String[] args) {
+		//1.person 객체생성
+		//2.person 객체의 데이터 표현 메소드 호출
+		
+		Test ts2=new Test(174,78,"김범수",41);
+		
+		
+	}
+
+}

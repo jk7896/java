@@ -1,0 +1,17 @@
+package part13;
+
+public class FrontEnd {
+	//프로젝트의 화면 디자인 및 기능을 담당하는 클래스
+	public void ClickGood() {
+		//데이터 베이스에 주문을 처리하는 로직을 구현해야 할때
+		//데이터베이스 내용은 BackEnd에서 하므로 성공했다고 가정하고 로직을 계속 구현
+		if(new DoService().DoAction()) {
+			
+		}
+	}
+	
+	
+	
+	
+	
+}

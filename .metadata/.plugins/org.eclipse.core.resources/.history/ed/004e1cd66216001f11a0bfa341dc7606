@@ -1,0 +1,15 @@
+package quize03;
+
+public class Player {
+	  private GameLevel level; // Player가 가지는 GameLevel 변수
+
+	    // Player의 level을 업그레이드하는 메서드
+	    void upgradeLevel(GameLevel level) {
+	        this.level = level;
+	    }
+
+	    // Player의 play() 메서드
+	    void play(int count) {
+	        level.play(count); // 현재 레벨의 play() 메서드 호출
+	    }
+	}

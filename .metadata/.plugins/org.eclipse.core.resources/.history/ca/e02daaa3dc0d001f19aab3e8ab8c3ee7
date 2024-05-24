@@ -1,0 +1,27 @@
+package part03_ClassTest;
+
+public class Test {
+	int tall;
+	int weight;
+	String flag;
+	String name;
+	int age;
+	
+	public Test() {
+		tall=0;
+		weight=0;
+		flag="";
+		name="";
+		age=0;
+	}
+public Test(int _tall,int _weight,String _flag,String _name,int _age) {
+	this.tall=_tall;
+	this.weight=_weight;
+	this.flag=_flag;
+	this.name=_name;
+	this.age=_age;
+	System.out.println("키가 "+tall+" 몸무게가 "+weight+"인 "+ flag +"이 있습니다."+ " 이름은 "+name+"이고 나이는 "+age+"입니다.");
+	}
+
+
+}

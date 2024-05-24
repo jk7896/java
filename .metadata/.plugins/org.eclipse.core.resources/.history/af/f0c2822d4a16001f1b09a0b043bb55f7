@@ -1,0 +1,23 @@
+package part12_Interface;
+
+public class CalComplete extends Calculator {
+
+	@Override
+	public int times(int num1, int num2) {
+		// 인터페이스의 기능을 구현
+		return num1*num2;
+	}
+
+	@Override
+	public int divides(int num1, int num2) {
+		// 인터페이스의 기능을 구현
+		return num1/num2;
+	}
+	
+	@Override
+	public int subStract(int num1, int num2) {
+		//Calculator 추상 클랫의 기능 사용한다.
+		return subStract(num1, num2);
+	}
+
+}

@@ -1,0 +1,126 @@
+package quize03;
+
+import quize03.AdvancedLevel;
+import quize03.Player;
+import quize03.SuperLevel;
+
+public class _TestCode {
+
+	public static void main(String[] args) {
+	 	Player player = new Player();
+		player.play(1);
+		
+		AdvancedLevel aLevel = new AdvancedLevel();
+		player.upgradeLevel(aLevel);
+		player.play(2);
+		
+		SuperLevel sLevel = new SuperLevel();
+		player.upgradeLevel(sLevel);
+		player.play(3);
+
+	}
+
+}
+
+
+
+
+//추상 클래스 GameLevel 정의
+abstract class GameLevel {
+ // 추상 메서드 run(), jump(), turn() 선언
+ abstract void run();
+ abstract void jump();
+ abstract void turn();
+
+ // 템플릿 메서드 play() 정의
+ final void play(int count) {
+     run();
+     for (int i = 0; i < count; i++) {
+         jump();
+     }
+     turn();
+ }
+}
+
+//초보자 레벨을 나타내는 BeginnerLevel 클래스 정의
+class BeginnerLevel extends GameLevel {
+ @Override
+ void run() {
+     System.out.println("천천히 달립니다.");
+ }
+
+ @Override
+ void jump() {
+     // 초보자 레벨에서는 jump()을 사용하지 않으므로 아무 동작도 하지 않음
+ }
+
+ @Override
+ void turn() {
+     // 초보자 레벨에서는 turn()을 사용하지 않으므로 아무 동작도 하지 않음
+ }
+}
+
+//중급자 레벨을 나타내는 AdvancedLevel 클래스 정의
+class AdvancedLevel extends GameLevel {
+ @Override
+ void run() {
+     System.out.println("빠르게 달리고,");
+ }
+
+ @Override
+ void jump() {
+     System.out.println("점프할 수 있습니다.");
+ }
+
+ @Override
+ void turn() {
+     // 중급자 레벨에서는 turn()을 사용하지 않으므로 아무 동작도 하지 않음
+ }
+}
+
+//고급자 레벨을 나타내는 SuperLevel 클래스 정의
+class SuperLevel extends GameLevel {
+ @Override
+ void run() {
+     System.out.println("엄청 빠르게 달리고,");
+ }
+
+ @Override
+ void jump() {
+     System.out.println("높게 점프하고,");
+ }
+
+ @Override
+ void turn() {
+     System.out.println("턴할 수 있습니다.");
+ }
+}
+
+//Player 클래스 정의
+public class __TestCode {
+ public static void main(String[] args) {
+     Player player = new Player();
+     player.play(1); // 초보자 레벨 플레이
+     AdvancedLevel aLevel = new AdvancedLevel();
+     player.upgradeLevel(aLevel); // 중급자 레벨로 업그레이드
+     player.play(2); // 중급자 레벨 플레이
+     SuperLevel sLevel = new SuperLevel();
+     player.upgradeLevel(sLevel); // 고급자 레벨로 업그레이드
+     player.play(3); // 고급자 레벨 플레이
+ }
+}
+
+//Player 클래스 정의
+class Player {
+ private GameLevel level; // Player가 가지는 GameLevel 변수
+
+ // Player의 level을 업그레이드하는 메서드
+ void upgradeLevel(GameLevel level) {
+     this.level = level;
+ }
+
+ // Player의 play() 메서드
+ void play(int count) {
+     level.play(count); // 현재 레벨의 play() 메서드 호출
+ }
+}

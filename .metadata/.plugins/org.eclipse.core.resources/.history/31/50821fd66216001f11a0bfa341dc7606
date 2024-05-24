@@ -1,0 +1,18 @@
+package quize03;
+
+public class SuperLevel extends GameLevel {
+	 @Override
+	    void run() {
+	        System.out.println("엄청 빠르게 달리고,");
+	    }
+
+	    @Override
+	    void jump() {
+	        System.out.println("높게 점프하고,");
+	    }
+
+	    @Override
+	    void turn() {
+	        System.out.println("턴할 수 있습니다.");
+	    }
+	}

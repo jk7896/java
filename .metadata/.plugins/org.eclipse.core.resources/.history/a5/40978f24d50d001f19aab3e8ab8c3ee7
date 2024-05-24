@@ -1,0 +1,8 @@
+package part04_ClassTest;
+
+public class Test {
+	int tall;
+	int weight;
+	String name;
+	int age;
+}

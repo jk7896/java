@@ -1,0 +1,19 @@
+package quize03;
+
+public class BeginnerLevel extends GameLevel {
+	 @Override
+	    void run() {
+	        System.out.println("천천히 달립니다.");
+	    }
+
+	    @Override
+	    void jump() {
+	        // 초보자 레벨에서는 jump()을 사용하지 않으므로 아무 동작도 하지 않음
+	    }
+
+	    @Override
+	    void turn() {
+	        // 초보자 레벨에서는 turn()을 사용하지 않으므로 아무 동작도 하지 않음
+	    }
+	
+}
